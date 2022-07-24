@@ -203,18 +203,6 @@ body {
     height: 500px;
 }
 
-/* #slider {
-    width: 80%;
-    max-width: 100vw;
-    height: 700px;
-    max-height: 150px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
- 
-} */
-
-
 .projects #slider div {
     opacity: 0;
     position: absolute;
