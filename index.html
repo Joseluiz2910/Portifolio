@@ -80,16 +80,15 @@
         <div class="skills-container">
         <h3>Habilidades</h3>
         <nav>
-        <a href=""> <i class="fab fa-html5"></i> HTML 
-    </a>
+        <a href=""> <i class="fab fa-html5"></i> HTML </a>
 
-        <a href=""> <i class="fab fa-css3-alt"></i>CSS </a>
+        <a href=""> <i class="fab fa-css3-alt"></i> CSS </a>
 
-        <a href=""> <i class="fab fa-js-square"></i>JAVASCRIPT </a>
+        <a href=""> <i class="fab fa-js-square"></i> JAVASCRIPT </a>
 
-        <a href=""> <i class="fab fa-git-alt"></i>GIT</a>
+        <a href=""> <i class="fab fa-git-alt"></i> GIT </a>
 
-        <a href=""> <i class="fab fa-react"></i>REACT</a>
+        <a href=""> <i class="fab fa-react"></i> REACT </a>
     </nav>
 </div>
     </section>
@@ -98,44 +97,53 @@
     <section class="projects" id="projects">
         <h3>Projetos</h3>
         
-        <nav>
-            <a href="https://joseluiz2910.github.io/ArteEmPontoOficial/" target="_blank" class="projeto-um"> 
-                <img src="./src/images/arteemponto.png" alt="">
-                <div class="texto">
+        <div id="slider">
+            <div class="selected" >
                 <h4>Arte Em Ponto</h4>
-                <p>Para contruir esse projeto foram utilizados o HTML E CSS puro. <br/> <br/>
+                <img  src="./src/images/arteemponto.png" alt="Image1"> 
+                
+                <p>Para contruir esse projeto foram utilizados o HTML E CSS puro. <br/><br/>
                     Esta é uma Landing-Page de uma empresa que faz artesanato com crochê,
-                    criando assim AMIGURUMIS. <br/>
+                    criando assim AMIGURUMIS. <br/><br/><br/><br/><br/>
                 </p>
-            </div>
-            </a>
-            <a href="https://joseluiz2910.github.io/motofrete/" target="_blank" class="projeto-um"> 
-                <img src="./src/images/motofrete.png" alt="">
-                <div class="texto">
+                <a href="https://joseluiz2910.github.io/ArteEmPontoOficial/" target="_blank">https://joseluiz2910.github.io/ArteEmPontoOficial/</a>
+                </div>
+
+            <div >
                 <h4>Correia entregas</h4>
-                <p>Para contruir esse projeto foram utilizados o HTML, CSS e JAVASCRIPT. <br/> <br/>
+                <img src="./src/images/motofrete.png" alt="Image2"> 
+                
+                <p>Para contruir esse projeto foram utilizados o HTML, CSS e JAVASCRIPT. <br/><br/>
                     Esta é uma página de uma empresa de Motoboy, nela é possivel solicitar a entrega, o JS calcula o valor 
                     da corrida, tem página de preenchimento de formulário para cadastro do cliente, e tudo responsivo para 
-                    funcionar em todos os dispositivos.
+                    funcionar em todos os dispositivos.<br/> <br/> <br/>
                 </p>
+                <a class="motofrete" href="https://joseluiz2910.github.io/motofrete/" target="_blank">https://joseluiz2910.github.io/motofrete/</a>
             </div>
-            </a>
-            <a href="https://joseluiz2910.github.io/ArteEmPontoOficial/" target="_blank" class="projeto-um"> 
-                <img src="./src/images/arteemponto.png" alt="">
-                <div class="texto">
-                <h4>Arte Em Ponto</h4>
-                <p>Para contruir esse projeto foram utilizados o HTML E CSS puro. <br/> <br/>
-                    Esta é uma Landing-Page de uma empresa que faz artesanato com crochê,
-                    criando assim AMIGURUMIS. <br/>
+
+            <div>
+                <h4>Arte Em Ponto React</h4>
+                <img src="./src/images/Home.png" alt="Image3">
+                
+                <p>Projeto construído em REACT<br/><br/>
+                    Nesse projeto foi utilizado: na página inicial uma biblioteca CAROUSEL, 
+                    para fazer um carrosel de imagens. <br/>
+                    E na página de solicitação de orçamento, foi utilizado o useState 
+                    para selecionar os dados a serem encaminhados para o WhatsApp. <br/>
+                    Também foi utilizado o REACT-ROUTER-DOM, para criar as rotas entre as páginas.<br/> 
                 </p>
+                <a href="https://github.com/Joseluiz2910/ArteEmPontoReact" target="_blank">https://github.com/Joseluiz2910/ArteEmPontoReact</a>
             </div>
-            </a>
-        </nav>
+        </div>
+               
+    
     </section>
 
     <section class="footer">
         <h3>PORTIFÓLIO PROFISSIONAL</h3>
         <p>Desenvolvido por &copy;José Luiz </p>
     </section>
+
+    <script src="./src/script/script.js"></script>
 </body>
 </html>
