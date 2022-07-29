@@ -99,6 +99,10 @@
         z-index: 1;
     }
 
+    .header nav span {
+        display: none;
+    }
+
     .header nav ul {
         width: 200px;
         background: linear-gradient(0.50turn, #0099ff, #90d1fc);

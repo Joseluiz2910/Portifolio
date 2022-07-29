@@ -1,26 +1,41 @@
-let time = 3000,
-    currentImageIndex = 0,
-    images = document
-                .querySelectorAll("#slider div ")
-    max = images.length;
+var btn1 = document.getElementById('btn-um');
+var btn2 = document.getElementById('btn-dois');
+var btn3 = document.getElementById('btn-tres');
 
-function nextImage() {
 
-    images[currentImageIndex].classList.remove("selected")
+var container = document.querySelector('.containerUm');
+var containerDois = document.querySelector('.containerDois');
+var containerTres = document.querySelector('.containerTres');
 
-    currentImageIndex++
 
-    if(currentImageIndex >= max)
-        currentImageIndex = 0
+btn1.addEventListener("click", function(){
+    if(container.style.display === 'block') {
+        container.style.display =  'none';
+    } else {
+        container.style.display = 'block';
+        containerDois.style.display = 'none'
+        containerTres.style.display = 'none'
+    }
+} )
 
-    images[currentImageIndex].classList.add("selected")
-}
+btn2.addEventListener("click", function(){
 
-function start() {
-    setInterval(() => {
-        // troca de image
-        nextImage()
-    }, time)
-}
+    if(containerDois.style.display === 'block') {
+        containerDois.style.display =  'none';
+    } else {
+        containerDois.style.display = 'block';
+        container.style.display = 'none'
+        containerTres.style.display = 'none'
+    }
+} )
 
-window.addEventListener("load", start)
+btn3.addEventListener("click", function(){
+
+    if(containerTres.style.display === 'block') {
+        containerTres.style.display =  'none';
+    } else {
+        containerTres.style.display = 'block';
+        containerDois.style.display = 'none'
+        container.style.display = 'none'
+    }
+} )
