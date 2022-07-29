@@ -59,6 +59,12 @@
     }
 }
 
+@media (max-width: 700px) {
+    .footer {
+        position: relative;
+        top: 700px;
+    }
+}
 
 @media (max-width: 540px) {
     .about .about-container h1 span {
